@@ -5,4 +5,3 @@ WORKDIR /usr/node/src
 ADD package.json package.json
 RUN npm install -g babel-cli istanbul mocha webpack gulp
 RUN npm install
-WORKDIR /usr/node/src/project
