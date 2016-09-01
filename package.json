@@ -7,7 +7,7 @@
     "compile": "babel --presets latest,react,stage-1 --plugins transform-runtime project/src/ --out-dir project/app/ --source-maps",
     "watch": "npm run compile -- --watch",
     "test": "mocha -t 5000 --recursive project/test/",
-    "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register -t 5000 --recursive -R spec project/test/"
+    "test-cov": "istanbul cover --dir project/coverage ./node_modules/mocha/bin/_mocha -- -t 5000 --recursive -R spec project/test/"
   },
   "author": "",
   "license": "ISC",
